@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Question;
 use Illuminate\Http\Request;
+use App\Http\Requests\AskQuestionRequest;
 
 class QuestionsController extends Controller
 {
@@ -29,9 +30,9 @@ class QuestionsController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(AskQuestionRequest $request)
     {
-        //
+        dd('store');
     }
 
 
